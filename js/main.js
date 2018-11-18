@@ -11,7 +11,7 @@ function makeNav(color, navArray, bool) {
     for (var i = 0; i < navArray.length; i++) {
         var newLi = document.createElement('li');
         var newAnchor = document.createElement('a');
-        newLi.style = "display: inline-block; padding:30px; text-align: center; width: " + (100 / navArray.length) + "%;";
+        newLi.style = "display: inline-block; padding:5px; text-align: center; width: " + (100 / navArray.length) + "%;";
         newAnchor.innerHTML = navArray[i].content;
         newAnchor.href = navArray[i].href;
         newAnchor.style.textDecoration = "none";
@@ -65,7 +65,7 @@ makeNav('#E9E4D1', [{
         content: '<img src="../img/logo.jpg">',
         href: 'index.html'
 }, {
-        content: '<a>Contra Costa County Animal Response Team</a>',
+        content: '<a>Contra Costa <br> Animal Response Team</a>',
         href: 'index.html'
 }],
     false);
