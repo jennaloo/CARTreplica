@@ -24,8 +24,7 @@ body {
     opacity: .8;
     color: black;
     border-radius: 1%;
-    box-shadow: 10px 5px 5px black;
-
+    box-shadow: 10px 5px 15px black;
 }
 
 .footer {
@@ -42,6 +41,7 @@ body {
     color: white;
     border-radius: 1%;
     background-color: tan;
+    box-shadow: 10px 5px 15px #dcdddd;
 }
 
 .inner-text {
@@ -55,6 +55,6 @@ div h1 {
 
 #introPhoto {
     border-radius: 1%;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 15px black;
 
 }

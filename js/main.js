@@ -1,6 +1,6 @@
 function makeNav(color, navArray, bool) {
     var navBar = document.createElement('nav');
-    navBar.style = "height: 150px; width: 100%; position: fixed; top: 0; left: 0;"
+    navBar.style = "height: 150px; width: 100%; position: absolute; top: 0; left: 0;"
     navBar.style.backgroundColor = color;
     navBar.id = "nav1";
     var navUl = document.createElement('ul');
@@ -32,7 +32,7 @@ function makeNav(color, navArray, bool) {
 
 function makeLowerNav(color, navArray, bool) {
     var navBar = document.createElement('nav');
-    navBar.style = "height: 50px; width: 100%; position: fixed; top: 150px; left: 0;"
+    navBar.style = "height: 50px; width: 100%; position: absolute; top: 150px; left: 0;"
     navBar.style.backgroundColor = color;
 
     var navUl = document.createElement('ul');
