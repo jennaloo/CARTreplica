@@ -12,7 +12,6 @@ function makeNav(color, navArray, bool) {
         var newLi = document.createElement('li');
         var newAnchor = document.createElement('a');
         newLi.style = "display: inline-block; padding:30px; text-align: center; width: " + (100 / navArray.length) + "%;";
-
         newAnchor.innerHTML = navArray[i].content;
         newAnchor.href = navArray[i].href;
         newAnchor.style.textDecoration = "none";
@@ -32,9 +31,10 @@ function makeNav(color, navArray, bool) {
 
 function makeLowerNav(color, navArray, bool) {
     var navBar = document.createElement('nav');
-    navBar.style = "height: 50px; width: 100%; position: absolute; top: 150px; left: 0;"
+    navBar.style = "height: 80px; width: 100%; position: absolute; top: 150px; left: 0;"
     navBar.style.backgroundColor = color;
-
+    navBar.id = "nav2";
+    navBar.class = "shift";
     var navUl = document.createElement('ul');
     navUl.style = "height: 100%; margin: 0; padding: 0;";
     navBar.appendChild(navUl);
@@ -43,7 +43,7 @@ function makeLowerNav(color, navArray, bool) {
     for (var i = 0; i < navArray.length; i++) {
         var newLi = document.createElement('li');
         var newAnchor = document.createElement('a');
-        newLi.style = "display: inline-block; padding-top: 12px; text-align: center; width: " + (100 / navArray.length) + "%;";
+        newLi.style = "display: inline-block; padding-top: 25px ;text-align: center; width: " + (100 / navArray.length) + "%;";
 
         newAnchor.innerHTML = navArray[i].content;
         newAnchor.href = navArray[i].href;
@@ -71,7 +71,7 @@ makeNav('#E9E4D1', [{
     false);
 
 
-makeLowerNav('black', [
+makeLowerNav('BLACK', [
         {
             content: '<a>HOME</a>',
             href: 'index.html'
@@ -81,11 +81,20 @@ makeLowerNav('black', [
             href: 'index.html'
         },
         {
-            content: '<a>EVENTS</a>',
+            content: '<a>RESOURCES</a>',
             href: 'index.html'
         },
         {
-            content: '<a>GALLERY</a>',
+            content: '<a>CONTACT</a>',
             href: 'index.html'
         }],
     true);
+
+
+
+//
+//$(document).ready(function () {
+//    $('#nav2 li').hover(function () {
+//        $(this).toggleClass('animated rubberBand');
+//    });
+//});

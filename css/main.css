@@ -14,12 +14,19 @@ body {
     white-space: pre;
 }
 
-.showcase {
-    margin-top: 200px;
+.showcase1 {
+    margin-top: 290px;
+    margin-bottom: 100px;
     color: white;
 }
 
-#textBox {
+.showcase2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: tan;
+}
+
+.textBox {
     background-color: white;
     opacity: .8;
     color: black;
@@ -28,7 +35,7 @@ body {
 }
 
 .footer {
-    height: 300px;
+    height: 100px;
     background-color: black;
 }
 
@@ -51,10 +58,50 @@ body {
 
 div h1 {
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
-#introPhoto {
+#introPhoto,
+#animal {
+    padding-top: 20px;
     border-radius: 1%;
     box-shadow: 10px 5px 15px black;
+}
 
+#animal {
+    padding: 0px;
+}
+
+#nav2 li a {
+    padding: 10px;
+    color: tan;
+    font-size: 20px;
+    border-radius: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#nav2 li a:hover {
+    -webkit-filter: blur(.6px);
+    filter: blur(.6px);
+    color: #3CDABA;
+}
+
+@media (max-width:500px) {
+    #nav2 li a {
+        display: none;
+    }
+    #nav2 li a .alt {
+        display: block;
+    }
+
+}
+
+.fullbg {
+    background-color: tan;
+}
+
+.social a {
+    color: #3CDABA;
+    text-decoration: none;
+    font-size: 48px;
 }
