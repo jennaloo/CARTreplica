@@ -79,6 +79,9 @@ makeLowerNav('BLACK', [
         {
             content: '<a>GALLERY</a>',
             href: 'gallery.html'
+        }, {
+            content: '<a>RESOURCES</a>',
+            href: 'resources.html'
         },
         {
             content: '<a>EVENTS</a>',

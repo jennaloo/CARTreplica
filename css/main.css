@@ -191,6 +191,15 @@ div h1 {
     #nav1 li a {
         font-size: 25px;
     }
+
+    #dog {
+        margin-top: 30px;
+    }
+
+    .form {
+        margin: 50px;
+    }
+
 }
 
 @media (max-width: 655px) {
