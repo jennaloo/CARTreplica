@@ -29,24 +29,36 @@
 <!--start body element-->
 
 <body>
-    <div class="calendarPage">
-        <div class="container eventsTitle">
-            <div class="row mx-auto">
-                <h1 class="p-3 mx-auto">Upcoming Training and Events</h1>
-            </div>
-        </div>
 
-        <div class="calendar container">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-12 p-3 contactTitle text-center">Interested in joining or ranks, or just finding out more? </h1>
+            <h2 class="subTitle col-12 p-3 text-center">Fill out the Form Below!</h2>
+        </div>
+    </div>
+
+    <div class="container form">
+        <div class="row p-4">
+            <form class="contactForm text-center col-6" action="mail.php" method="POST">
+                <p class="p-1">Your Name:</p>
+                <input placeholder="Enter your Full Name" class="input" type="text" name="name">
+                <p class="p-1">Your E-Mail or Phone: </p>
+                <input placeholder="What's the best way to contact you?" class="input" type="text" name="email">
+                <p class="p-1">Message:</p>
+                <textarea placeholder="What's on your mind?" class="input" name="message" rows="6" cols="25"></textarea><br />
+                <input class="send btn" type="submit" value="Send">
+                <input class="send btn" type="reset" value="Clear">
+            </form>
+            <img class="col-6" src="img/dog.svg" alt="">
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container social">
             <div class="row">
-                <iframe class="col-12 px-5" src="https://calendar.google.com/calendar/embed?src=904q8tc14sr4d94om5u9ucglp4%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> </div>
-        </div>
-
-        <div class="footer">
-            <div class="container social">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <a href="https://www.facebook.com/ccasd/?__tn__=%2Cd%2CP-R&eid=ARDJXLHP8Q0m7IxJFnjlihrszaWCYNiK9aMCj2YonNvA6WMgZKGwF7pe3hHwe891WtW2dS9ig_Edx6rh"><i class="fab fa-facebook"></i></a>
-                    </div>
+                <div class="col-12 text-center">
+                    <a href="https://www.facebook.com/ccasd/?__tn__=%2Cd%2CP-R&eid=ARDJXLHP8Q0m7IxJFnjlihrszaWCYNiK9aMCj2YonNvA6WMgZKGwF7pe3hHwe891WtW2dS9ig_Edx6rh"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>

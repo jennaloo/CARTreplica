@@ -130,6 +130,54 @@ div h1 {
     margin-bottom: 10%;
 }
 
+/*calendar*/
+
+.eventsTitle {
+    margin-top: 250px;
+    color: tan;
+}
+
+.calendar {
+    margin-bottom: 100px;
+}
+
+.contactTitle {
+    margin-top: 250px;
+    color: tan;
+}
+
+.subTitle {
+    color: tan;
+}
+
+.contactForm p {
+    color: tan;
+}
+
+.input {
+    width: 300px;
+    ;
+}
+
+.input:placeholder {
+    color: #40DBBB;
+}
+
+.send:hover {
+    background-color: #40DBBB;
+}
+
+.send:active {
+    transform: scale(.9);
+}
+
+.form {
+    margin-bottom: 100px;
+}
+
+.form img {
+    opacity: .8;
+}
 
 /*all media queries*/
 
@@ -160,10 +208,16 @@ div h1 {
 }
 
 
+
 @media (max-width:555px) {
     #nav1 li a {
         font-size: 18px;
         white-space: pre;
+    }
+
+
+    #slideshow {
+        width: 100% !important;
     }
 
 }
