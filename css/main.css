@@ -4,9 +4,10 @@
 
 
 body {
-    background-image: url(../img/bg.jpg);
+    background-color: #372618 !important;
     background-size: cover;
 }
+
 
 #nav1 {
     opacity: .8;
@@ -17,19 +18,22 @@ body {
 
 
 .showcase1 {
-    margin-top: 290px;
-    margin-bottom: 100px;
     color: white;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    margin-top: 220px;
 }
 
+
 .showcase2 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     background-color: tan;
 }
 
 .textBox {
     background-color: white;
+    height: 100%;
     opacity: .8;
     color: black;
     border-radius: 1%;
@@ -39,6 +43,7 @@ body {
 .footer {
     height: 100px;
     background-color: black;
+    bottom: 0;
 }
 
 .section {
@@ -65,7 +70,6 @@ div h1 {
 
 #introPhoto,
 #animal {
-    padding-top: 20px;
     border-radius: 1%;
     box-shadow: 10px 5px 15px black;
 }
@@ -88,8 +92,6 @@ div h1 {
     color: #3CDABA;
 }
 
-@media (max-width:500px) {}
-
 .fullbg {
     background-color: tan;
 }
@@ -100,7 +102,41 @@ div h1 {
     font-size: 48px;
 }
 
+#nav1 img {
+    float: left;
+    width: 16rem;
+}
 
+
+/*styling for gallery page*/
+
+#slideshow {
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 3vw;
+    color: tan;
+}
+
+#ourTeam {
+    margin-top: 250px;
+}
+
+/*styling for team photo*/
+
+#team {
+    margin-bottom: 10%;
+}
+
+
+/*all media queries*/
+
+@media(max-width:992px) {
+    #animal {
+        margin-bottom: 45px !important;
+    }
+}
 
 @media (max-width:777px) {
     #nav1 li a {
@@ -115,9 +151,7 @@ div h1 {
         text-align: center;
     }
 
-    #nav1 img {
-        width: 60%;
-    }
+    #nav1 img {}
 
     #nav2 li a {
         display: none;
@@ -129,5 +163,25 @@ div h1 {
     #nav1 li a {
         font-size: 18px;
         white-space: pre;
+    }
+
+}
+
+@media(max-width:520px) {
+    #nav1 ul {
+        display: none;
+    }
+
+    #altnav {
+        display: block;
+    }
+
+    #nav1 {
+        background-image: url('../img/mobileLogo.png');
+        background-size: cover;
+    }
+
+    #nav1 ul {
+        height: 200px;
     }
 }

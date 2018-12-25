@@ -4,14 +4,14 @@ function makeNav(color, navArray, bool) {
     navBar.style.backgroundColor = color;
     navBar.id = "nav1";
     var navUl = document.createElement('ul');
-    navUl.style = "height: 100%; margin: 0; padding: 0;";
+    navUl.style = "height: 100%;";
     navBar.appendChild(navUl);
     document.body.appendChild(navBar);
 
     for (var i = 0; i < navArray.length; i++) {
         var newLi = document.createElement('li');
         var newAnchor = document.createElement('a');
-        newLi.style = "display: inline-block; padding:5px; text-align: center; width: " + (100 / navArray.length) + "%;";
+        newLi.style = "display: inline-block; padding:0px; vertical-align:middle; ;text-align: center; width: " + (100 / navArray.length) + "%;";
         newAnchor.innerHTML = navArray[i].content;
         newAnchor.href = navArray[i].href;
         newAnchor.style.textDecoration = "none";
@@ -62,7 +62,7 @@ function makeLowerNav(color, navArray, bool) {
 }
 
 makeNav('#E9E4D1', [{
-        content: '<img src="../img/logo.jpg">',
+        content: '<img src="img/logo.png">',
         href: 'index.html'
 }, {
         content: '<a>Contra Costa <br> Animal Response Team</a>',
@@ -78,15 +78,15 @@ makeLowerNav('BLACK', [
         },
         {
             content: '<a>GALLERY</a>',
-            href: 'index.html'
+            href: 'gallery.html'
         },
         {
             content: '<a>RESOURCES</a>',
-            href: 'index.html'
+            href: 'resources.html'
         },
         {
             content: '<a>CONTACT</a>',
-            href: 'index.html'
+            href: 'contact.html'
         }],
     true);
 
