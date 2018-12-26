@@ -2,11 +2,28 @@
     transition: 0.5s ease;
 }
 
-
+html,
 body {
     background-color: #372618 !important;
-    background-size: cover;
 }
+
+}
+
+.content {
+    min-height: 100%;
+}
+
+.content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.footer {
+    height: 100%;
+    margin-top: -50px;
+}
+
 
 
 #nav1 {
@@ -40,6 +57,7 @@ body {
     border-radius: 1%;
     box-shadow: 10px 5px 15px black;
 }
+
 
 .footer {
     height: 100px;
@@ -172,7 +190,7 @@ div h1 {
 }
 
 .form {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .form img {
@@ -180,14 +198,14 @@ div h1 {
 }
 
 .links {
-    margin-top: 250px;
-    margin-bottom: 40px;
+    margin-top: 400px;
+    margin-bottom: 220px;
     border-radius: 5px;
 }
 
 
 .service {
-    height: 150px;
+    height: 100px;
 }
 
 .serviceDiv:hover {
