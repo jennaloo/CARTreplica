@@ -126,6 +126,13 @@ div h1 {
     width: 16rem;
 }
 
+#altnav {
+    background-color: red;
+}
+
+#altnav {
+    display: none;
+}
 
 /*styling for gallery page*/
 
@@ -247,7 +254,9 @@ div h1 {
         text-align: center;
     }
 
-    #nav1 img {}
+    #altnav {
+        display: block;
+    }
 
     #nav2 li a {
         display: none;
@@ -272,10 +281,6 @@ div h1 {
 @media(max-width:520px) {
     #nav1 ul {
         display: none;
-    }
-
-    #altnav {
-        display: block;
     }
 
     #nav1 {

@@ -34,7 +34,6 @@ function makeLowerNav(color, navArray, bool) {
     navBar.style = "height: 80px; width: 100%; position: absolute; top: 150px; left: 0;"
     navBar.style.backgroundColor = color;
     navBar.id = "nav2";
-    navBar.class = "shift";
     var navUl = document.createElement('ul');
     navUl.style = "height: 100%; margin: 0; padding: 0;";
     navBar.appendChild(navUl);
@@ -90,14 +89,6 @@ makeLowerNav('BLACK', [
         {
             content: '<a>CONTACT</a>',
             href: 'contact.html'
-        }],
+        }
+],
     true);
-
-
-
-//
-//$(document).ready(function () {
-//    $('#nav2 li').hover(function () {
-//        $(this).toggleClass('animated rubberBand');
-//    });
-//});
