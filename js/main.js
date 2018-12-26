@@ -92,3 +92,10 @@ makeLowerNav('BLACK', [
         }
 ],
     true);
+
+
+//*jQuery menu*//
+function expandMenu() {
+    $("#dropDown").toggleClass("open");
+    $(".list").toggleClass("openList");
+}
